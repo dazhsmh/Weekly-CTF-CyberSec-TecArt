@@ -4,7 +4,7 @@ kerja dan tools dasar yang diperlukan untuk mengikuti pembelajaran serta kompeti
 Cyber Security, khususnya Capture The Flag (CTF)
 
 ## Tools Umum  
-<img src="https://github.com/dazhsmh/Weekly-CTF-CyberSec-TecArt/edit/main/week0/img/tools-umum.png" width="300">
+<img src="https://github.com/dazhsmh/Weekly-CTF-CyberSec-TecArt/blob/main/week0/img/tools-umum.png" width="300">
 
 Instalasi tools umum yang telah diinstall:  
 - WSL (Windows Subsytem for Linux) Distro Kali Linux  
@@ -12,8 +12,8 @@ Instalasi tools umum yang telah diinstall:
 - Python
 
 ## Pengujian WSL  
-<img src="https://github.com/dazhsmh/Weekly-CTF-CyberSec-TecArt/edit/main/week0/img/create-readme.png" width="500">
-<img src="https://github.com/dazhsmh/Weekly-CTF-CyberSec-TecArt/edit/main/week0/img/nano-identitas.png" width="500">  
+<img src="https://github.com/dazhsmh/Weekly-CTF-CyberSec-TecArt/blob/main/week0/img/create-readme.png" width="500">
+<img src="https://github.com/dazhsmh/Weekly-CTF-CyberSec-TecArt/blob/main/week0/img/nano-identitas.png" width="500">  
 
 Pengujian WSL dilakukan sepenuhnya melalui Command Line Interface (CLI).
 Langkah - langkah yang dilakukan:
@@ -26,8 +26,8 @@ Langkah - langkah yang dilakukan:
 - Divisi
 
 ## Pengujian Python  
-<img src="https://github.com/dazhsmh/Weekly-CTF-CyberSec-TecArt/edit/main/week0/img/create-py.png" width="500">
-<img src="https://github.com/dazhsmh/Weekly-CTF-CyberSec-TecArt/edit/main/week0/img/nano-py.png" width="500">  
+<img src="https://github.com/dazhsmh/Weekly-CTF-CyberSec-TecArt/blob/main/week0/img/create-py.png" width="500">
+<img src="https://github.com/dazhsmh/Weekly-CTF-CyberSec-TecArt/blob/main/week0/img/nano-py.png" width="500">  
 
 Pengujian python dengan membuat program sederhana dilakukan dengan langkah - langkah berikut:
 1. Membuat program menggunakan ```nano [nama program]``` dengan ekstensi file .py
@@ -40,15 +40,15 @@ https://learn.cylabacademy.org/library/766
 Dokumentasikan langkah-langkah penyelesaian challenge dalam write-up.  
 
 ## [-] Pengerjaan Challenge Undo  
-<img src="https://github.com/dazhsmh/Weekly-CTF-CyberSec-TecArt/edit/main/week0/img/launch.png" width="500">  
-<img src="https://github.com/dazhsmh/Weekly-CTF-CyberSec-TecArt/edit/main/week0/img/nc_soal.png" width="500">  
+<img src="https://github.com/dazhsmh/Weekly-CTF-CyberSec-TecArt/blob/main/week0/img/launch.png" width="500">  
+<img src="https://github.com/dazhsmh/Weekly-CTF-CyberSec-TecArt/blob/main/week0/img/nc_soal.png" width="500">  
 
 - Tekan tombol Launch Instance untuk memulai.  
 - Hubungkan server soal dengan command ```nc [ip_address] [port]```  
 
 Berikut 5 step yang muncul untuk menyelesaikan challenge ini.  
 
-<img src="https://github.com/dazhsmh/Weekly-CTF-CyberSec-TecArt/edit/main/week0/img/challenge_undo.png" width="500">  
+<img src="https://github.com/dazhsmh/Weekly-CTF-CyberSec-TecArt/blob/main/week0/img/challenge_undo.png" width="500">  
 
 ### --- Step 1 ---
 ```
@@ -101,20 +101,20 @@ https://medium.com/@marshal_demi/using-rot13-and-tr-command-e67c2bd607ed
 ### [-] Pengerjaan Challenge IntroToBurp (Kategori Web)  
 Link: https://learn.cylabacademy.org/library/419  
 1. Start instance lalu buka website target untuk mulai menganalisa.  
-<img src="https://github.com/dazhsmh/Weekly-CTF-CyberSec-TecArt/edit/main/week0/img/web1.png" width="500">
+<img src="https://github.com/dazhsmh/Weekly-CTF-CyberSec-TecArt/blob/main/week0/img/web1.png" width="500">
 2. Saya menggunakan software Burp Suite yang telah terinstall di laptop saya untuk melakukan proses analisa.  
-<img src="https://github.com/dazhsmh/Weekly-CTF-CyberSec-TecArt/edit/main/week0/img/web2.png" width="500">
+<img src="https://github.com/dazhsmh/Weekly-CTF-CyberSec-TecArt/blob/main/week0/img/web2.png" width="500">
 3. Website target berisikan form registrasi. Setelah mengisi form tersebut halaman dialihkan ke form otp.  
-<img src="https://github.com/dazhsmh/Weekly-CTF-CyberSec-TecArt/edit/main/week0/img/web3.png" width="500">
+<img src="https://github.com/dazhsmh/Weekly-CTF-CyberSec-TecArt/blob/main/week0/img/web3.png" width="500">
 4. Setelah itu saya membuka Burp Suite lalu pergi ke dashboard Proxy dan menghidupkan mode Intercept. Gunakan web browser dari Burp Suite untuk menganalisa website target. Disaat saya mengisi lalu mengirim form otp, website mengirimkan sebuah request yang berisikan nilai otp dengan metode POST.  
-<img src="https://github.com/dazhsmh/Weekly-CTF-CyberSec-TecArt/edit/main/week0/img/web4.png" width="500">
+<img src="https://github.com/dazhsmh/Weekly-CTF-CyberSec-TecArt/blob/main/week0/img/web4.png" width="500">
 5. Saya mencoba request tersebut di mode repeater lalu mencoba menghapus "otp=1234" untuk melihat responsenya. Flag berhasil di dapatkan dan challenge berhasil diselesaikan.  
-<img src="https://github.com/dazhsmh/Weekly-CTF-CyberSec-TecArt/edit/main/week0/img/web5.png" width="500">
+<img src="https://github.com/dazhsmh/Weekly-CTF-CyberSec-TecArt/blob/main/week0/img/web5.png" width="500">
 
 ### [-] Pengerjaan Challenge Information (Kategori Forensics)  
 Link: https://learn.cylabacademy.org/library/186  
-<img src="https://github.com/dazhsmh/Weekly-CTF-CyberSec-TecArt/edit/main/week0/img/forensic-1.png" width="500">  
-<img src="https://github.com/dazhsmh/Weekly-CTF-CyberSec-TecArt/edit/main/week0/img/forensic-2.png" width="500">
+<img src="https://github.com/dazhsmh/Weekly-CTF-CyberSec-TecArt/blob/main/week0/img/forensic-1.png" width="500">  
+<img src="https://github.com/dazhsmh/Weekly-CTF-CyberSec-TecArt/blob/main/week0/img/forensic-2.png" width="500">
 
 
 Download file foto cat.jpg untuk dianalisis. Tampilan foto saat dibuka tampak normal. Saya telah menginstall tool Exiftool untuk digunakan menganalisis gambar. Gunakan command ```exiftool [nama_file]``` untuk menganalisis. 
@@ -150,16 +150,16 @@ Image Size                      : 2560x1598
 Megapixels                      : 4.1
 ```
 
-<img src="https://github.com/dazhsmh/Weekly-CTF-CyberSec-TecArt/edit/main/week0/img/forensic-3.png" width="500">
+<img src="https://github.com/dazhsmh/Weekly-CTF-CyberSec-TecArt/blob/main/week0/img/forensic-3.png" width="500">
 
 Terlihat seluruh detail file foto. Karena nampak ada yang janggal dengan licensenya, saya menggunakan command ```echo "cGljb0NURnt0aGVfbTN0YWRhdGFfMXNfbW9kaWZpZWR9" | base64 -d``` untuk mencoba mendecode teks tersebut dengan base64. Benar saja teks tersebut merupakan flag tersembunyi. Challenge pun terselesaikan.  
 
-<img src="https://github.com/dazhsmh/Weekly-CTF-CyberSec-TecArt/edit/main/week0/img/forensic-4.png" width="500">  
+<img src="https://github.com/dazhsmh/Weekly-CTF-CyberSec-TecArt/blob/main/week0/img/forensic-4.png" width="500">  
 
 
 ### [-] Pengerjaan Challenge The Numbers (Kategori Cryptography)  
 
-<img src="https://github.com/dazhsmh/Weekly-CTF-CyberSec-TecArt/edit/main/week0/img/crypto-2.png" width="500">  
+<img src="https://github.com/dazhsmh/Weekly-CTF-CyberSec-TecArt/blob/main/week0/img/crypto-2.png" width="500">  
 
 Sebelum mengerjakan challenge, pada WSL saya mempelajari cara membuat Python Virtual Environment (venv) lalu menginstall library pycryptodome. Setelah library diinstall saya menjalankan kode berikut:  
 ```
@@ -176,17 +176,17 @@ print (" Plaintext :", plaintext . decode () )
 
 ```
 
-<img src="https://github.com/dazhsmh/Weekly-CTF-CyberSec-TecArt/edit/main/week0/img/crypto-1.png" width="500">  
+<img src="https://github.com/dazhsmh/Weekly-CTF-CyberSec-TecArt/blob/main/week0/img/crypto-1.png" width="500">  
 
 Program dapat dijalankan tanpa error dan menghasilkan Plaintext: Hello
 PyCryptodome!.  
 
-<img src="https://github.com/dazhsmh/Weekly-CTF-CyberSec-TecArt/edit/main/week0/img/crypto-3.png" width="500">  
+<img src="https://github.com/dazhsmh/Weekly-CTF-CyberSec-TecArt/blob/main/week0/img/crypto-3.png" width="500">  
 
 Link: https://learn.cylabacademy.org/library/68  
 Pada challenge ini, saya mendapatkan sebuah gambar yang berisikan kumpulan angka unik disertai tanda kurung kurawal buka dan tutup. Hint pada challenge ini yaitu format flagnya adalah PICOCTF{}. Karena format flag dan nomor sama sama memiliki kurung kurawal, saya mencoba mencocoklogikan antara nomor yang di dapat dengan format flag.  
 
-<img src="https://github.com/dazhsmh/Weekly-CTF-CyberSec-TecArt/edit/main/week0/img/crypto-4.png" width="500">  
+<img src="https://github.com/dazhsmh/Weekly-CTF-CyberSec-TecArt/blob/main/week0/img/crypto-4.png" width="500">  
 
 ```
 16 = P
@@ -199,7 +199,7 @@ Pada challenge ini, saya mendapatkan sebuah gambar yang berisikan kumpulan angka
 ```
 Dari pola tersebut didapatkan bahwa nomor tersebut telah diterjemahkan dengan sandi A1Z26. Kita hanya perlu menerjemahkannya kembali ke text semula. Di linux kita dapat menggunakan command ``` echo "16 9 3 15 3 20 6 { 20 8 5 14 21 13 2 5 18 19 13 1 19 15 14 }" | perl -pe 's/(\d+)/chr($1+96)/ge; s/\s//g' ``` untuk menerjemahkan kembali teks itu dalam sandi A1Z26. Flag pun berhasil didapatkan. Challenge selesai.  
 
-<img src="https://github.com/dazhsmh/Weekly-CTF-CyberSec-TecArt/edit/main/week0/img/crypto-5.png" width="500">  
+<img src="https://github.com/dazhsmh/Weekly-CTF-CyberSec-TecArt/blob/main/week0/img/crypto-5.png" width="500">  
 
 Referensi:  
 https://mutiinsani.medium.com/virtual-environment-pada-python-b1f49816ee51  
@@ -209,8 +209,8 @@ https://www.scribd.com/document/523257737/codes
 Link: https://tecartlab.sanca.site/challenges#Icibos%20Tekart%200-12  
 Install program lalu coba jalankan dan analisis. Saya juga menggunakan software Binary Ninja untuk meganalisis program ini. Saat menjalankan program, muncul text dimana kita bisa menginput kata ajaib. 
 
-<img src="https://github.com/dazhsmh/Weekly-CTF-CyberSec-TecArt/edit/main/week0/img/program1-1.png" width="500">  
-<img src="https://github.com/dazhsmh/Weekly-CTF-CyberSec-TecArt/edit/main/week0/img/program1-2.png" width="500">  
+<img src="https://github.com/dazhsmh/Weekly-CTF-CyberSec-TecArt/blob/main/week0/img/program1-1.png" width="500">  
+<img src="https://github.com/dazhsmh/Weekly-CTF-CyberSec-TecArt/blob/main/week0/img/program1-2.png" width="500">  
 
 ```
 Belajar Reverse Engineering
@@ -218,7 +218,7 @@ Masukan kata ajaib:
 ```
 Untuk mencari kata ajaib tersebut, saya membuka program ini di software Binary Ninja. Gunakan tampilan linear dan High Level IL untuk membaca kode programnya.
 
-<img src="https://github.com/dazhsmh/Weekly-CTF-CyberSec-TecArt/edit/main/week0/img/program1-3.png" width="500">  
+<img src="https://github.com/dazhsmh/Weekly-CTF-CyberSec-TecArt/blob/main/week0/img/program1-3.png" width="500">  
 
 ```
 00401166    int32_t main()
@@ -247,13 +247,13 @@ Untuk mencari kata ajaib tersebut, saya membuka program ini di software Binary N
 ```
 Pada main function, terdapat deklarasi variabel p = "iniString" dengan tipe data char. Lalu di bawahnya terlihat ada program untuk menginput variabel r serta perulangan dan percabangan. Sepertinya kode program perulangan digunakan untuk menampilkan huruf yang disimpan dalam array p & r. Kondisi percabangan menunjukkan jika seluruh karakter dari variabel r sama dengan karakter variabel p, maka password benar. Maka kata ajaib yang dimaksud adalah "IniString". Setelah memasukkan kata tersebut di dalam program, saya berhasil mendapatkan flag dan menyelesaikan challenge ini.  
 
-<img src="https://github.com/dazhsmh/Weekly-CTF-CyberSec-TecArt/edit/main/week0/img/program1-4.png" width="500">  
+<img src="https://github.com/dazhsmh/Weekly-CTF-CyberSec-TecArt/blob/main/week0/img/program1-4.png" width="500">  
 
 ### [-] Pengerjaan Challenge Icibos Tekart 1 (Kategori Reverse Engineering dan Binary Exploitation)  
 Link: https://tecartlab.sanca.site/challenges#Icibos%20Tekart%201-13  
 Install program lalu coba jalankan dan analisis. Saya juga menggunakan software Binary Ninja untuk meganalisis program ini. Saat menjalankan program, muncul text dimana kita bisa menginput kata ajaib. (Lagi)
 
-<img src="https://github.com/dazhsmh/Weekly-CTF-CyberSec-TecArt/edit/main/week0/img/program2-1.png" width="500">  
+<img src="https://github.com/dazhsmh/Weekly-CTF-CyberSec-TecArt/blob/main/week0/img/program2-1.png" width="500">  
 
 ```
 Belajar Reverse Engineering
@@ -261,7 +261,7 @@ Masukan kata ajaib:
 ```
 Untuk mencari kata ajaib tersebut, saya membuka program ini di software Binary Ninja. Gunakan tampilan linear dan High Level IL untuk membaca kode programnya.
 
-<img src="https://github.com/dazhsmh/Weekly-CTF-CyberSec-TecArt/edit/main/week0/img/program2-2.png" width="500">  
+<img src="https://github.com/dazhsmh/Weekly-CTF-CyberSec-TecArt/blob/main/week0/img/program2-2.png" width="500">  
 
 ```
 004012b8    int32_t main()
@@ -290,6 +290,6 @@ Untuk mencari kata ajaib tersebut, saya membuka program ini di software Binary N
 ```
 Pada main function, terdapat deklarasi variabel p dan r dengan tipe data char. Lalu di bawahnya terlihat ada program untuk menginput variabel r serta perulangan dan percabangan. Sepertinya kode program perulangan digunakan untuk menampilkan huruf yang disimpan dalam array p & r. Terdapat pula kode ```__builtin_strcpy(dest: &p, src: "bukanString")``` yang menyalin string ke memory variabel p. Kondisi percabangan menunjukkan jika seluruh karakter dari variabel r sama dengan karakter variabel p, lalu panjang string tepat 11, maka password benar. Maka kata ajaib yang dimaksud adalah "bukanString". Setelah memasukkan kata tersebut di dalam program, saya berhasil mendapatkan flag dan menyelesaikan challenge ini.  
 
-<img src="https://github.com/dazhsmh/Weekly-CTF-CyberSec-TecArt/edit/main/week0/img/program2-3.png" width="500">  
+<img src="https://github.com/dazhsmh/Weekly-CTF-CyberSec-TecArt/blob/main/week0/img/program2-3.png" width="500">  
 
 
